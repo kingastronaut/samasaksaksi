@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Language Learning Blog</title>
+  <style>
+    :root {
+      --primary: #4a90e2;
+      --light: #f9f9f9;
+      --dark: #333;
+      --radius: 12px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background-color: var(--light);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--primary);
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 1rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    article {
+      background: white;
+      padding: 1.5rem;
+      border-radius: var(--radius);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease;
+    }
+
+    article:hover {
+      transform: translateY(-5px);
+    }
+
+    article h2 {
+      margin-top: 0;
+      color: var(--primary);
+    }
+
+    article a {
+      display: inline-block;
+      margin-top: 0.5rem;
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    article a:hover {
+      text-decoration: underline;
+    }
+
+    aside {
+      background: white;
+      padding: 1.5rem;
+      border-radius: var(--radius);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    aside h3 {
+      margin-top: 0;
+      color: var(--primary);
+    }
+
+    aside ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    aside li {
+      margin-bottom: 0.5rem;
+    }
+
+    aside a {
+      text-decoration: none;
+      color: var(--dark);
+    }
+
+    aside a:hover {
+      color: var(--primary);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: var(--dark);
+      color: white;
+      font-size: 0.9rem;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 900px) {
+      main {
+        grid-template-columns: 1fr;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+        width: 100%;
+        margin-top: 1rem;
+      }
+
+      nav {
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.4rem;
+      }
+
+      main {
+        padding: 0 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Language Learning Adventures</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Resources</a></li>
+        <li><a href="#">Tips</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <article>
+        <h2>How to Stay Motivated When Learning a New Language</h2>
+        <p><small>Posted on October 5, 2025</small></p>
+        <p>Learning a new language can be challenging, but consistency is key. Discover practical ways to maintain enthusiasm and track progress as you grow your skills...</p>
+        <a href="#">Read more →</a>
+      </article>
+
+      <article>
+        <h2>The Best Apps for Language Learners in 2025</h2>
+        <p><small>Posted on September 20, 2025</small></p>
+        <p>Explore the top-rated apps for mastering new languages—from gamified flashcards to AI-powered conversation tools designed to accelerate fluency.</p>
+        <a href="#">Read more →</a>
+      </article>
+
+      <article>
+        <h2>Why Immersion Beats Grammar Drills</h2>
+        <p><small>Posted on August 15, 2025</small></p>
+        <p>Immersion isn’t just about traveling abroad. Learn how to surround yourself with your target language no matter where you are and start thinking like a native speaker.</p>
+        <a href="#">Read more →</a>
+      </article>
+    </section>
+
+    <aside>
+      <h3>About This Blog</h3>
+      <p>Welcome! Here we share strategies, tools, and inspiration for language lovers of all levels. Join us as we explore words, cultures, and global communication.</p>
+
+      <h3>Recent Posts</h3>
+      <ul>
+        <li><a href="#">10 Common Mistakes English Learners Make</a></li>
+        <li><a href="#">How to Find a Language Exchange Partner</a></li>
+        <li><a href="#">Tips for Learning with Native Media</a></li>
+      </ul>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Language Learning Adventures | Designed with ❤️ for language learners</p>
+  </footer>
+</body>
+</html>
